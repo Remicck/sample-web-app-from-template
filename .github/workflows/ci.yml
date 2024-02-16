@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup-node
-      - run: cp ./.env.test ./.env.local
+      - run: cp ./.env.sample ./.env.local
       - run: pnpm dev:db:setup
       - run: pnpm build
       - uses: actions/upload-artifact@v4
