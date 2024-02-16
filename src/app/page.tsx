@@ -26,7 +26,7 @@ async function Status() {
       <p className="text-gray-300">
         {session?.user
           ? `you are signed in as ${session.user.name} 😄`
-          : "you are not signed in 🥲🥲🥲🥲🥲🥲"}
+          : "you are not signed in 🥲🥲🥲🥲🥲🥲🥲🥲🥲🥲🥲🥲"}
       </p>
       {session?.user && (
         <form action={deleteAll}>
